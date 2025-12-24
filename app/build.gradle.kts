@@ -1,6 +1,7 @@
 plugins {
+    application
     id("java")
-    id("com.github.ben-manes.versions") 
+    id("com.github.ben-manes.versions") version "0.49.0"
 }
 
 group = "hexlet.code"
@@ -18,4 +19,7 @@ dependencies {
 
 tasks.test {
     useJUnitPlatform()
+}
+application {
+    mainClass.set("hexlet.code.App")
 }
